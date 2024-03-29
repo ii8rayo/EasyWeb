@@ -1,7 +1,7 @@
 
 function redirectToHome() {
     // Redirect to the home page
-    window.location.href = "html\home.html";
+    window.location.href = "home.html";
 }
 
 document.addEventListener('DOMContentLoaded', function() {
