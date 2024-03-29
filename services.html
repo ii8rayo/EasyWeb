@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Services - Government Of Canada </title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <nav id="home-nav">
+    <div class="logo">
+      <img src="assets/Canada_logo.jpg" alt="Canada_logo">
+    </div>    
+    <ul class="nav-links">
+      <li><a href="home.html">About </a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#Tickets">Operations</a></li>
+      <li><a href="forms-status.html">Forms/Status</a></li>
+      <li><a href="login.html">LogOut</a></li>
+    </ul>
+  </nav>
+
+  <div class="service-container">
+        <h3>Passports</h3>
+        <p>Get assistance with passport applications and renewals.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container">
+        <h3>Social Insurance Number (SIN)</h3>
+        <p>Apply for or replace your Social Insurance Number card.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container">
+        <h3>Birth Certificate</h3>
+        <p>Request a birth certificate for yourself or your child.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container">
+        <h3>Death Certificate</h3>
+        <p>Obtain a death certificate for a deceased family member.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container">
+        <h3>Extending Your Visa</h3>
+        <p>Get help with extending your visa or immigration status.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container2">
+        <h3>Driver License</h3>
+        <p>Apply for or renew your driver's license.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container2">
+        <h3>Permission to Move with a Firearm</h3>
+        <p>Obtain authorization for moving with a firearm.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container2">
+        <h3>Add / Remove a User to the Vehicle</h3>
+        <p>Manage users associated with your vehicle registration.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container2">
+        <h3>Reporting a Stolen or Lost Document</h3>
+        <p>Report a stolen or lost document and request assistance.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container2">
+        <h3>Inquiry about Tickets and Fines</h3>
+        <p>Get information about tickets, fines, and related inquiries.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container2">
+        <h3>Number Plates</h3>
+        <p>Request or renew vehicle number plates.</p>
+        <button class="prompt-button">Service Explanation</button>
+      </div>
+      <div class="service-container2">
+        <h3>Health Card</h3>
+        <p>More in the future ... </p>
+        <button class="prompt-button">Undefined</button>
+      </div>
+    </section>
+  
+   <section id="Tickets">
+      <!-- Select category dropdown -->
+      <div class="select-container">
+        <div class="select-category">
+         <label for="category-select">Select Category - Start The Operation</label>
+          <select id="category-select">
+           <option value="passport">Passports</option>
+           <option value="sin">Social Insurance Number (SIN)</option>
+           <option value="birth-certificate">Birth Certificate</option>
+           <option value="driver-license">Driver License</option>
+           <option value="death">Death Certificate</option>
+           <option value="visa">Extending Your Visa</option>
+           <option value="firearm">Permission to Move with a Firearm</option>
+           <option value="vehicle-power">Add / Remove a User to the Vehicle</option>
+           <option value="stolen-lost-doc">Reporting a Stolen or Lost Document</option>
+           <option value="fines-tickets">Inquiry about Tickets and Fines</option>
+           <option value="number-plates">Number Plates</option>
+         </select>
+       </div>
+     </div>
+  
+      <div id="message-container" style="display: none;">
+       <p id="category-message"></p>
+       <hr>
+        <form id="attachment-form" enctype="multipart/form-data" class="attachment-form" id="form1">
+         <input type="file" id="attachment" name="attachment" accept=".jpg, .jpeg, .png, .pdf" multiple class="attachment-input">
+         <button type="submit" class="submit-button">Submit</button>
+        </form>
+       <div id="file-list"></div> <!-- Container to display the list of uploaded files -->
+      </div> 
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

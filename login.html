@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Login - Government Of Canada </title>
+     <link rel="stylesheet" href="styles.css">
+ </head>
+
+ <body>
+     <nav id="desktop-nav">
+         <div class="logo">
+             <img src="assets/Canada_logo.jpg" alt="Canada_logo">
+         </div>    
+     </nav>
+
+     <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" id="login-btn" onclick="redirectToHome()">Login</button>
+        </form>
+
+
+        <!-- Footer -->
+        <footer>
+          <p>&copy; 2024 Government Of Canada. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
+   

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms / checkStatus - Government Of Canada</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <nav id="home-nav">
+        <div class="logo">
+            <img src="assets/Canada_logo.jpg" alt="Canada_logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Forms/Status</a></li>
+            <li><a href="login.html">LogOut</a></li>
+        </ul>
+    </nav>
+
+    <div class="Form">
+        <div class="status">
+            <h2>Your Application Status:</h2>
+            <input type="text" id="applicationNumber" placeholder="Enter Application Number">
+            <button onclick="checkStatus()">Check Status</button>
+            <p id="applicationStatus">Enter your application number above and click 'Check Status'.</p>
+        </div>
+        <hr>
+        <div class="Select">
+            <h2>Select the Service You Need:</h2>
+            <select id="category-select">
+                <option value="passport">Passports</option>
+                <option value="sin">Social Insurance Number (SIN)</option>
+                <option value="birth-certificate">Birth Certificate</option>
+                <option value="driver-license">Driver License</option>
+                <option value="death">Death Certificate</option>
+                <option value="visa">Extending Your Visa</option>
+                <option value="firearm">Permission to Move with a Firearm</option>
+                <option value="vehicle-power">Add / Remove a User to the Vehicle</option>
+                <option value="stolen-lost-doc">Reporting a Stolen or Lost Document</option>
+                <option value="fines-tickets">Inquiry about Tickets and Fines</option>
+                <option value="number-plates">Number Plates</option>
+            </select>
+            <button id="downloadPDF" onclick="downloadPDF()">Download PDF</button>
+        </div>
+  
+       <script src="script.js"></script>
+</body>
+</html>

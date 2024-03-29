@@ -1,0 +1,115 @@
+/* Set initial styles */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: rgba(125, 125, 125, 0.300);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+nav {
+    display: flex;
+    justify-content: center; /* Center align items */
+    align-items: center;
+    height: 80px; /* Adjust the height of the nav */
+    padding: 0 20px;
+    background-color: white;
+}
+
+.logo {
+    /* Center the logo */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo img {
+    width: 250px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 150px; /* Adjust logo size for smaller screens */
+    }
+
+    .login-container {
+        margin-top: 30px; /* Move the login form down */
+    }
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 8%;
+    padding: 20px;
+    border: 1px solid #686868;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 78%;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#login-message {
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* ------------------------------------------ Home Page ----------------------------------------------- */
+
+
