@@ -29,17 +29,6 @@ nav {
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Media Query for responsiveness */
-@media screen and (max-width: 768px) {
-    .logo img {
-        width: 150px; /* Adjust logo size for smaller screens */
-    }
-
-    .login-container {
-        margin-top: 30px; /* Move the login form down */
-    }
-}
-
 .login-container {
     max-width: 400px;
     margin: 0 auto;
@@ -103,13 +92,30 @@ footer {
     width: 100%;
 }
 
-/* Media Query for responsiveness */
-@media screen and (max-width: 768px) {
-    footer {
-        font-size: 14px; /* Adjust font size for smaller screens */
+
+@media screen and (max-width: 430px){
+
+    .logo img {
+        width: 250px;
     }
+
+    .login-container {
+        margin-top: 20%;
+        padding: 20px;
+        width: 300px;
+        border: 1px solid #686868;
+        border-radius: 5px;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+
+   
+    
+
+
+
+
+
 }
-
-/* ------------------------------------------ Home Page ----------------------------------------------- */
-
-
