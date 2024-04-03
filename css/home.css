@@ -57,7 +57,7 @@ section {
   margin-bottom: 10px;
   margin-top: 20px;
   text-decoration: underline;
-  margin-left: -32%;
+  margin-left: 2%;
   font-size: 34px; /* Adjust the size as needed */
   color: white;
 }
@@ -327,77 +327,183 @@ footer {
 }
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 700px) {
   /* Adjusting the logo size */
-   #home-nav .logo img {
-    width: 300px; /* Adjust the size as needed */
-    height: 100px;
+  #home-nav .logo img {
+    width: 70%; /* Make the logo responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 40px;
+    margin-left: 0%;
   }
-  
+
   /* Positioning the navigation links */
   #home-nav .nav-links {
-      position: fixed;
-      height: 120px;
-      width: 120px;
-      top: 0; /* Adjust the distance from the top */
-      right: 0; /* Adjust the distance from the right */
-      background-color: #fff; /* Example background color */
-      padding: 10px; /* Example padding */
-      border-radius: 0; /* Example border radius */
-      box-shadow: none; /* Example box shadow */
+    position: absolute;
+    height: 60px; /* Reduced height */
+    width: 100%; /* Occupy full width */
+    top: 0;
+    left: 2%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: none;
   }
-  
+
   /* Adjusting the styling of the navigation links */
   #home-nav .nav-links li {
-    margin-bottom: 1.5px; /* Example margin between each link */
+    margin-bottom: 5px; /* Increased margin */
   }
 
+  .services-page #home-nav .logo img {
+    width: 50%; /* Make the logo responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 30px;
+    margin-left: 2%;
+  }
+  
+  .services-page #home-nav .nav-links {
+    position: absolute;
+    height: 60px; /* Reduced height */
+    width: 85%; /* Occupy full width */
+    top: 0;
+    left: 2%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .forms-status #home-nav .nav-links li {
+    margin-bottom: 5px; /* Increased margin */
+  }  
+
+  .forms-status #home-nav .logo img {
+    width: 10%; /* Make the logo responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 30px;
+    margin-left: 2%;
+  }
+
+  /* ---------------------------------------------------------------- */
+
+  /* Common styles for Form, Status, and Select */
+  .Form, .status, .Select {
+    max-width: 100%; /* Adjusted maximum width */
+    margin: 0 auto; /* Center the forms horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Reduced margin from the top */
+  }
+
+  /* Status styles */
+  .status input[type="text"] {
+    width: calc(100% - 20px); /* Adjusted input width */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px; /* Reduced font size */
+  }
+
+  .status button {
+    background-color: rgb(50, 145, 50);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+  }
+
+  /* Select styles */
+  .Select select {
+    width: calc(100% - 20px); /* Adjusted select width */
+    padding: 10px;
+    font-size: 14px; /* Reduced font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .Select button {
+    background-color:  rgb(50, 145, 50);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+  }
+
+  /* PDF Container styles */
+  #pdfContainer {
+    margin-top: 20px;
+  }
+
+  /* ---------------------------------------------------------------- */
+  
+  .forms-status #home-nav .nav-links {
+    position: absolute;
+    height: 60px; /* Reduced height */
+    width: 100%; /* Occupy full width */
+    top: 0;
+    left: 2%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .forms-status #home-nav .nav-links li {
+    margin-bottom: 5px; /* Increased margin */
+  }  
+
+  /* Styling the title */
   .title {
-      font-size: 2em;
-      text-align: center;
-      margin-bottom: 10px;
-      margin-top: 30px;
-      text-decoration: underline;
-      margin-left: -32%;
-      color: white;
+    font-size: 1.5em; /* Reduced font size */
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px; /* Reduced top margin */
+    text-decoration: underline;
+    color: white;
   }
 
+  /* Styling paragraphs within .text-container */
   .text-container p {
-    padding: 4%;
-    font-size: 16px;
+    padding: 5%; /* Increased padding */
+    font-size: 14px; /* Reduced font size */
   }
 
+  /* Styling the slider */
   .slider {
-    margin-left: 4%;
-    width: 90%;
-    height:30%;
-    margin-top: 1%;
+    margin: 0 auto; /* Center the slider */
+    width: 100%; /* Occupy full width */
+    height: auto; /* Allow height to adjust */
+    margin-top: 10px; /* Increased top margin */
   }
 
+  /* Styling the contents of the slider */
   .slider__contents {
-    /* Adjusting the width */
-    width: 80%; /* You can adjust the width percentage as needed */
-    /* Adjusting the margin */
-    margin: 0 auto; /* Center the slider contents horizontally */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align content to the start (top) */
+    width: 90%; /* Adjusted width */
+    margin-top: -3%;
   }
 
+  /* Adjusting the font size of slider elements */
   .slider__image {
-    /* Adjusting the font size */
-    font-size: 24px; /* You can adjust the font size as needed */
+    font-size: 18px; /* Adjusted font size */
+    margin-top: 10%;
   }
 
   .slider__caption {
-    /* Adjusting the font size */
-    font-size: 18px; /* You can adjust the font size as needed */
+    font-size: 14px; /* Adjusted font size */
+    margin-top: 2%;
   }
 
   .slider__txt {
-    /* Adjusting the font size */
-    font-size: 14px; /* You can adjust the font size as needed */
+    font-size: 12px; /* Adjusted font size */
   }
+
+  .slider__nav {
+    margin-top: 40%;
+  }
+
 }
 
   
